@@ -25,7 +25,7 @@ public class ItemService {
                         .setId(item.getId())
                         .setName(item.getName())
                         .setDescription(item.getDescription())
-//                        .setPrice(item.getPrice())
+                        .setPrice(item.getPrice())
                         .build())
                 .collect(Collectors.toList());
     }
