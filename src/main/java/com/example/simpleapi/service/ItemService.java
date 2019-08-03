@@ -28,5 +28,6 @@ public class ItemService {
                         .setPrice(item.getPrice())
                         .build())
                 .collect(Collectors.toList());
+        //few comments to trigger the pipe
     }
 }
