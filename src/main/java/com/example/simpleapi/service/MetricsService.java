@@ -70,8 +70,11 @@ public class MetricsService {
         List<Long> responseTimes = resultRecords.stream()
                 .map(MetricRecordDto::getResponseTime)
                 .collect(Collectors.toList());
-
-//            NewRelic.recordMetric(CUSTOM_CATEGORY+"/responseTime", (float)responseTimes.stream().mapToLong(MetricRecordDto::getResponseTime).average().orElse(0));
-
+            NewRelic.getAgent().getConfig();
+            NewRelic.recordMetric(CUSTOM_CATEGORY+"/responseTime",
+                    (float)responseTimes.stream()
+                            .mapToLong(m->m)
+                            .average()
+                            .orElse(0));
     }
 }
