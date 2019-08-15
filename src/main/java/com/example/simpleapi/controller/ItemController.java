@@ -20,6 +20,11 @@ public class ItemController {
 
     @GetMapping("/items")
     public List<ItemDto> getItems(){
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return itemService.getItems();
     }
 }
