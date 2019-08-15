@@ -1,4 +1,4 @@
-package com.example.simpleapi.controller;
+package com.example.loadtesteraggregator.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

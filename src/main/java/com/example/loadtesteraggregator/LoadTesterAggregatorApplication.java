@@ -1,13 +1,13 @@
-package com.example.simpleapi;
+package com.example.loadtesteraggregator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SimpleapiApplication {
+public class LoadTesterAggregatorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SimpleapiApplication.class, args);
+		SpringApplication.run(LoadTesterAggregatorApplication.class, args);
 	}
 
 }

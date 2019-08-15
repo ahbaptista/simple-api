@@ -1,6 +1,6 @@
-package com.example.simpleapi.controller;
+package com.example.loadtesteraggregator.controller;
 
-import com.example.simpleapi.service.MetricsService;
+import com.example.loadtesteraggregator.service.MetricsService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

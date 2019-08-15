@@ -1,4 +1,4 @@
-package com.example.simpleapi.dto;
+package com.example.loadtesteraggregator.dto;
 
 public class MetricRecordDto {
 
