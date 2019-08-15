@@ -21,6 +21,5 @@ public class ItemController {
     @GetMapping("/items")
     public List<ItemDto> getItems(){
         return itemService.getItems();
-        //trigger pipe
     }
 }
