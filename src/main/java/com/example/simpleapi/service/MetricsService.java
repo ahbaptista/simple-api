@@ -1,6 +1,6 @@
-package com.example.loadtesteraggregator.service;
+package com.example.simpleapi.service;
 
-import com.example.loadtesteraggregator.dto.MetricRecordDto;
+import com.example.simpleapi.dto.MetricRecordDto;
 import com.newrelic.api.agent.NewRelic;
 import com.opencsv.CSVReader;
 import org.slf4j.Logger;
@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 @Service
 public class MetricsService {
 
-    private static final String CUSTOM_CATEGORY = "Custom/simple-api-load-test";
+    private static final String CUSTOM_CATEGORY = "Custom/api-load-test";
     private static final Logger LOGGER = LoggerFactory.getLogger(MetricsService.class);
 
     public void recordResults(InputStream inputStream) {
